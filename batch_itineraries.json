@@ -1,0 +1,3023 @@
+[
+  {
+    "request_id": "4e7ae9af-6cc4-4c66-8034-6b7e910e25e5",
+    "created_at": "2025-09-18T12:43:05.704073Z",
+    "user_payload": {
+      "city": "Mumbai",
+      "start_date": "2025-10-16",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-16+0",
+        "sent_at": "2025-09-18T12:43:05.704193Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "5080df0a-4ca9-4d3a-957c-abebb6db6b7f",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Mumbai",
+            "date": "2025-10-16+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "5080df0a-4ca9-4d3a-957c-abebb6db6b7f",
+          "result": {
+            "structured": {
+              "city": "Mumbai",
+              "date": "2025-10-16+0",
+              "condition": "clear",
+              "temp_c": 26,
+              "chances_of_precipitation": 20,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Mumbai",
+          "date": "2025-10-16+0",
+          "condition": "clear",
+          "temp_c": 26,
+          "chances_of_precipitation": 20,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:05.708856Z"
+      },
+      {
+        "date": "2025-10-16+1",
+        "sent_at": "2025-09-18T12:43:06.009128Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "8a8dda3f-26be-4271-83a2-9b11bba6f2d0",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Mumbai",
+            "date": "2025-10-16+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "8a8dda3f-26be-4271-83a2-9b11bba6f2d0",
+          "result": {
+            "structured": {
+              "city": "Mumbai",
+              "date": "2025-10-16+1",
+              "condition": "clear",
+              "temp_c": 26,
+              "chances_of_precipitation": 20,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Mumbai",
+          "date": "2025-10-16+1",
+          "condition": "clear",
+          "temp_c": 26,
+          "chances_of_precipitation": 20,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:06.013187Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:43:06.313494Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "4e7ae9af-6cc4-4c66-8034-6b7e910e25e5",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Mumbai",
+          "start_date": "2025-10-16",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "5080df0a-4ca9-4d3a-957c-abebb6db6b7f",
+              "result": {
+                "structured": {
+                  "city": "Mumbai",
+                  "date": "2025-10-16+0",
+                  "condition": "clear",
+                  "temp_c": 26,
+                  "chances_of_precipitation": 20,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "8a8dda3f-26be-4271-83a2-9b11bba6f2d0",
+              "result": {
+                "structured": {
+                  "city": "Mumbai",
+                  "date": "2025-10-16+1",
+                  "condition": "clear",
+                  "temp_c": 26,
+                  "chances_of_precipitation": 20,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "4e7ae9af-6cc4-4c66-8034-6b7e910e25e5",
+        "result": {
+          "itinerary": "**Mumbai 2-Day Plan (October 16-17, 2025)**\n\n**Day 1: October 16, 2025**\n- Weather: Clear skies, 26\u00b0C, 20% chance of precipitation.\n- Plan: Explore outdoor attractions like the Gateway of India, Marine Drive, and Crawford Market. Don't forget your sunglasses!\n\n**Day 2: October 17, 2025**\n- Weather: Clear skies, 26\u00b0C, 20% chance of precipitation (similar to Day 1).\n- Plan: Visit historical sites like Chhatrapati Shivaji Maharaj Terminus and Elephanta Caves. Enjoy a stroll along the beach in the afternoon, and consider trying local street food in the evening."
+        }
+      },
+      "response_received_at": "2025-09-18T12:43:08.164342Z"
+    }
+  },
+  {
+    "request_id": "b4d0f992-f198-4064-8931-9a246b9e7bd9",
+    "created_at": "2025-09-18T12:43:08.764699Z",
+    "user_payload": {
+      "city": "Delhi",
+      "start_date": "2025-10-17",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-17+0",
+        "sent_at": "2025-09-18T12:43:08.764850Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "4b11d092-ef14-4e10-b9fb-c25216413393",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Delhi",
+            "date": "2025-10-17+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "4b11d092-ef14-4e10-b9fb-c25216413393",
+          "result": {
+            "structured": {
+              "city": "Delhi",
+              "date": "2025-10-17+0",
+              "condition": "clear",
+              "temp_c": 25,
+              "chances_of_precipitation": 7,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Delhi",
+          "date": "2025-10-17+0",
+          "condition": "clear",
+          "temp_c": 25,
+          "chances_of_precipitation": 7,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:08.769777Z"
+      },
+      {
+        "date": "2025-10-17+1",
+        "sent_at": "2025-09-18T12:43:09.070000Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "316f26ee-2e55-4981-b3aa-1d1782231a3c",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Delhi",
+            "date": "2025-10-17+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "316f26ee-2e55-4981-b3aa-1d1782231a3c",
+          "result": {
+            "structured": {
+              "city": "Delhi",
+              "date": "2025-10-17+1",
+              "condition": "clear",
+              "temp_c": 25,
+              "chances_of_precipitation": 7,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Delhi",
+          "date": "2025-10-17+1",
+          "condition": "clear",
+          "temp_c": 25,
+          "chances_of_precipitation": 7,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:09.074491Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:43:09.374670Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "b4d0f992-f198-4064-8931-9a246b9e7bd9",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Delhi",
+          "start_date": "2025-10-17",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "4b11d092-ef14-4e10-b9fb-c25216413393",
+              "result": {
+                "structured": {
+                  "city": "Delhi",
+                  "date": "2025-10-17+0",
+                  "condition": "clear",
+                  "temp_c": 25,
+                  "chances_of_precipitation": 7,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "316f26ee-2e55-4981-b3aa-1d1782231a3c",
+              "result": {
+                "structured": {
+                  "city": "Delhi",
+                  "date": "2025-10-17+1",
+                  "condition": "clear",
+                  "temp_c": 25,
+                  "chances_of_precipitation": 7,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "b4d0f992-f198-4064-8931-9a246b9e7bd9",
+        "result": {
+          "itinerary": "**2-Day Plan for Delhi, Starting October 17, 2025**\n\n**Day 1: October 17, 2025**\n- **Weather**: Clear skies, 25\u00b0C, low chance of precipitation (7%)\n- **Activity**: Explore historical landmarks like the Red Fort, Jama Masjid, and Humayun's Tomb. Don't forget to wear sunglasses!\n\n**Day 2: October 18, 2025**\n- **Weather**: Clear skies, 25\u00b0C, low chance of precipitation (7%)\n- **Activity**: Visit cultural attractions like the Lotus Temple, Qutub Minar, and Chandni Chowk for shopping and street food. Again, sunglasses are recommended for the sunny weather.\n\nBoth days offer ideal conditions for outdoor activities, so make the most of the clear skies and mild temperatures. Enjoy your trip to Delhi!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:43:12.756868Z"
+    }
+  },
+  {
+    "request_id": "c08aa206-4653-45bf-9da1-eff82865eab7",
+    "created_at": "2025-09-18T12:43:13.357266Z",
+    "user_payload": {
+      "city": "Bengaluru",
+      "start_date": "2025-10-18",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-18+0",
+        "sent_at": "2025-09-18T12:43:13.357412Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "0cd35cc5-140c-4c99-9c9c-76eb9f3b0ea4",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Bengaluru",
+            "date": "2025-10-18+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "0cd35cc5-140c-4c99-9c9c-76eb9f3b0ea4",
+          "result": {
+            "structured": {
+              "city": "Bengaluru",
+              "date": "2025-10-18+0",
+              "condition": "rain",
+              "temp_c": 29,
+              "chances_of_precipitation": 59,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Bengaluru",
+          "date": "2025-10-18+0",
+          "condition": "rain",
+          "temp_c": 29,
+          "chances_of_precipitation": 59,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:43:13.361751Z"
+      },
+      {
+        "date": "2025-10-18+1",
+        "sent_at": "2025-09-18T12:43:13.661990Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "cb1f5eb6-756b-4515-802c-07f711e7a641",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Bengaluru",
+            "date": "2025-10-18+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "cb1f5eb6-756b-4515-802c-07f711e7a641",
+          "result": {
+            "structured": {
+              "city": "Bengaluru",
+              "date": "2025-10-18+1",
+              "condition": "rain",
+              "temp_c": 29,
+              "chances_of_precipitation": 59,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Bengaluru",
+          "date": "2025-10-18+1",
+          "condition": "rain",
+          "temp_c": 29,
+          "chances_of_precipitation": 59,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:43:13.665941Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:43:13.966144Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "c08aa206-4653-45bf-9da1-eff82865eab7",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Bengaluru",
+          "start_date": "2025-10-18",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "0cd35cc5-140c-4c99-9c9c-76eb9f3b0ea4",
+              "result": {
+                "structured": {
+                  "city": "Bengaluru",
+                  "date": "2025-10-18+0",
+                  "condition": "rain",
+                  "temp_c": 29,
+                  "chances_of_precipitation": 59,
+                  "advice": "Carry umbrella"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "cb1f5eb6-756b-4515-802c-07f711e7a641",
+              "result": {
+                "structured": {
+                  "city": "Bengaluru",
+                  "date": "2025-10-18+1",
+                  "condition": "rain",
+                  "temp_c": 29,
+                  "chances_of_precipitation": 59,
+                  "advice": "Carry umbrella"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "c08aa206-4653-45bf-9da1-eff82865eab7",
+        "result": {
+          "itinerary": "**2-Day Plan for Bengaluru (October 18-19, 2025)**\n\n**Day 1: October 18, 2025**\n- Weather: Rain, 29\u00b0C, 59% chance of precipitation.  \n- **Morning**: Visit indoor attractions like the Visvesvaraya Industrial and Technological Museum or the National Gallery of Modern Art.  \n- **Afternoon**: Explore the vibrant UB City Mall for shopping and dining, staying dry from the rain.  \n- **Evening**: Enjoy a cozy dinner at a rooftop restaurant with covered seating, like Windmills Craftworks.  \n- **Advice**: Carry an umbrella throughout the day.  \n\n**Day 2: October 19, 2025**  \n- Weather: Rain, 29\u00b0C, 59% chance of precipitation.  \n- **Morning**: Visit the Bangalore Palace or the Karnataka Chitrakala Parishath for indoor cultural experiences.  \n- **Afternoon**: Head to the Phoenix Marketcity Mall for shopping and entertainment.  \n- **Evening**: Relax at a caf\u00e9 like Infinitea or indulge in local cuisine at a covered food street.  \n- **Advice**: Keep your umbrella handy for sudden showers.  \n\nBoth days focus on indoor activities and covered spaces to enjoy Bengaluru while staying dry from the rain."
+        }
+      },
+      "response_received_at": "2025-09-18T12:43:17.731406Z"
+    }
+  },
+  {
+    "request_id": "054de6b8-837b-4360-9e8b-1652244eabb8",
+    "created_at": "2025-09-18T12:43:18.331715Z",
+    "user_payload": {
+      "city": "Chennai",
+      "start_date": "2025-10-19",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-19+0",
+        "sent_at": "2025-09-18T12:43:18.331895Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "3bd37da2-5e4b-4338-bbbf-b295a8091a63",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Chennai",
+            "date": "2025-10-19+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "3bd37da2-5e4b-4338-bbbf-b295a8091a63",
+          "result": {
+            "structured": {
+              "city": "Chennai",
+              "date": "2025-10-19+0",
+              "condition": "clear",
+              "temp_c": 27,
+              "chances_of_precipitation": 33,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Chennai",
+          "date": "2025-10-19+0",
+          "condition": "clear",
+          "temp_c": 27,
+          "chances_of_precipitation": 33,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:18.336617Z"
+      },
+      {
+        "date": "2025-10-19+1",
+        "sent_at": "2025-09-18T12:43:18.637019Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "e886f55d-2c91-4eef-bac8-10ffe004d497",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Chennai",
+            "date": "2025-10-19+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "e886f55d-2c91-4eef-bac8-10ffe004d497",
+          "result": {
+            "structured": {
+              "city": "Chennai",
+              "date": "2025-10-19+1",
+              "condition": "clear",
+              "temp_c": 27,
+              "chances_of_precipitation": 33,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Chennai",
+          "date": "2025-10-19+1",
+          "condition": "clear",
+          "temp_c": 27,
+          "chances_of_precipitation": 33,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:18.640970Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:43:18.941239Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "054de6b8-837b-4360-9e8b-1652244eabb8",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Chennai",
+          "start_date": "2025-10-19",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "3bd37da2-5e4b-4338-bbbf-b295a8091a63",
+              "result": {
+                "structured": {
+                  "city": "Chennai",
+                  "date": "2025-10-19+0",
+                  "condition": "clear",
+                  "temp_c": 27,
+                  "chances_of_precipitation": 33,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "e886f55d-2c91-4eef-bac8-10ffe004d497",
+              "result": {
+                "structured": {
+                  "city": "Chennai",
+                  "date": "2025-10-19+1",
+                  "condition": "clear",
+                  "temp_c": 27,
+                  "chances_of_precipitation": 33,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "054de6b8-837b-4360-9e8b-1652244eabb8",
+        "result": {
+          "itinerary": "**2-Day Plan for Chennai, Starting 2025-10-19**\n\n**Day 1: 2025-10-19**\n- **Weather**: Clear skies, 27\u00b0C, 33% chance of precipitation.\n- **Activities**: \n  - Start the day with a visit to Marina Beach, enjoying the clear skies and warm weather. Don\u2019t forget your sunglasses!\n  - Explore the historic Fort St. George and the nearby museums.\n  - In the afternoon, visit the Kapaleeshwarar Temple, a stunning example of Dravidian architecture.\n  - End the day with a stroll through the bustling streets of T. Nagar for shopping and local cuisine.\n\n**Day 2: 2025-10-20**\n- **Weather**: Clear skies, 27\u00b0C, 33% chance of precipitation.\n- **Activities**: \n  - Begin with a visit to the Arignar Anna Zoological Park, one of the largest zoos in South Asia.\n  - Head to the Government Museum and National Art Gallery for a cultural experience.\n  - In the late afternoon, relax at the Elliot\u2019s Beach and enjoy the sunset.\n  - Conclude the day with a dinner at a seaside restaurant, savoring Chennai\u2019s famous seafood.\n\n**General Advice**: Keep hydrated, wear light clothing, and carry an umbrella just in case of unexpected rain. Enjoy your trip!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:43:25.587164Z"
+    }
+  },
+  {
+    "request_id": "7114a1b6-472b-45b0-881d-c74e10769c59",
+    "created_at": "2025-09-18T12:43:26.187507Z",
+    "user_payload": {
+      "city": "Kolkata",
+      "start_date": "2025-10-20",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-20+0",
+        "sent_at": "2025-09-18T12:43:26.187658Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "17d0a475-fb41-4df9-a1ca-9ac26e98b2da",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Kolkata",
+            "date": "2025-10-20+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "17d0a475-fb41-4df9-a1ca-9ac26e98b2da",
+          "result": {
+            "structured": {
+              "city": "Kolkata",
+              "date": "2025-10-20+0",
+              "condition": "clear",
+              "temp_c": 27,
+              "chances_of_precipitation": 33,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Kolkata",
+          "date": "2025-10-20+0",
+          "condition": "clear",
+          "temp_c": 27,
+          "chances_of_precipitation": 33,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:26.191994Z"
+      },
+      {
+        "date": "2025-10-20+1",
+        "sent_at": "2025-09-18T12:43:26.492213Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "f0e10d1d-9a8c-4f9c-a78c-007026e9ecc8",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Kolkata",
+            "date": "2025-10-20+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "f0e10d1d-9a8c-4f9c-a78c-007026e9ecc8",
+          "result": {
+            "structured": {
+              "city": "Kolkata",
+              "date": "2025-10-20+1",
+              "condition": "clear",
+              "temp_c": 27,
+              "chances_of_precipitation": 33,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Kolkata",
+          "date": "2025-10-20+1",
+          "condition": "clear",
+          "temp_c": 27,
+          "chances_of_precipitation": 33,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:26.495900Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:43:26.796131Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "7114a1b6-472b-45b0-881d-c74e10769c59",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Kolkata",
+          "start_date": "2025-10-20",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "17d0a475-fb41-4df9-a1ca-9ac26e98b2da",
+              "result": {
+                "structured": {
+                  "city": "Kolkata",
+                  "date": "2025-10-20+0",
+                  "condition": "clear",
+                  "temp_c": 27,
+                  "chances_of_precipitation": 33,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "f0e10d1d-9a8c-4f9c-a78c-007026e9ecc8",
+              "result": {
+                "structured": {
+                  "city": "Kolkata",
+                  "date": "2025-10-20+1",
+                  "condition": "clear",
+                  "temp_c": 27,
+                  "chances_of_precipitation": 33,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "7114a1b6-472b-45b0-881d-c74e10769c59",
+        "result": {
+          "itinerary": "**2-Day Plan for Kolkata (October 20-21, 2025)**\n\n**Day 1: October 20, 2025**\n- Weather: Clear skies, 27\u00b0C, 33% chance of precipitation.\n- Activities:\n  - Visit the Victoria Memorial in the morning, taking advantage of the clear weather.\n  - Explore the Indian Museum or the Science City for indoor activities, considering the chance of precipitation.\n  - In the evening, stroll along the Hooghly River and enjoy the sunset.\n- Advice: Wear sunglasses and carry a light jacket or umbrella, just in case.\n\n**Day 2: October 21, 2025**\n- Weather: Clear skies, 27\u00b0C, 33% chance of precipitation (similar to Day 1).\n- Activities:\n  - Start the day with a visit to the Dakshineswar Kali Temple or the Belur Math for a cultural experience.\n  - Head to Park Street or New Market for shopping and local cuisine.\n  - End the day with a relaxing walk in the Maidan or a boat ride on the lake at Eco Park.\n- Advice: Continue to wear sunglasses and be prepared for a slight chance of rain.\n\nBoth days offer similar weather conditions, so plan outdoor activities accordingly and stay updated on weather changes. Enjoy your time in Kolkata!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:43:30.917568Z"
+    }
+  },
+  {
+    "request_id": "14444a44-83f3-43cb-bd1e-8eb5dd2b00b0",
+    "created_at": "2025-09-18T12:43:31.517986Z",
+    "user_payload": {
+      "city": "Hyderabad",
+      "start_date": "2025-10-21",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-21+0",
+        "sent_at": "2025-09-18T12:43:31.518589Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "1c41825e-28dd-4f27-949d-5cdafca5b907",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Hyderabad",
+            "date": "2025-10-21+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "1c41825e-28dd-4f27-949d-5cdafca5b907",
+          "result": {
+            "structured": {
+              "city": "Hyderabad",
+              "date": "2025-10-21+0",
+              "condition": "rain",
+              "temp_c": 29,
+              "chances_of_precipitation": 59,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Hyderabad",
+          "date": "2025-10-21+0",
+          "condition": "rain",
+          "temp_c": 29,
+          "chances_of_precipitation": 59,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:43:31.522518Z"
+      },
+      {
+        "date": "2025-10-21+1",
+        "sent_at": "2025-09-18T12:43:31.822751Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "e9ad5f45-2862-49c4-a60a-7b59b044f40b",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Hyderabad",
+            "date": "2025-10-21+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "e9ad5f45-2862-49c4-a60a-7b59b044f40b",
+          "result": {
+            "structured": {
+              "city": "Hyderabad",
+              "date": "2025-10-21+1",
+              "condition": "rain",
+              "temp_c": 29,
+              "chances_of_precipitation": 59,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Hyderabad",
+          "date": "2025-10-21+1",
+          "condition": "rain",
+          "temp_c": 29,
+          "chances_of_precipitation": 59,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:43:31.826998Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:43:32.127155Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "14444a44-83f3-43cb-bd1e-8eb5dd2b00b0",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Hyderabad",
+          "start_date": "2025-10-21",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "1c41825e-28dd-4f27-949d-5cdafca5b907",
+              "result": {
+                "structured": {
+                  "city": "Hyderabad",
+                  "date": "2025-10-21+0",
+                  "condition": "rain",
+                  "temp_c": 29,
+                  "chances_of_precipitation": 59,
+                  "advice": "Carry umbrella"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "e9ad5f45-2862-49c4-a60a-7b59b044f40b",
+              "result": {
+                "structured": {
+                  "city": "Hyderabad",
+                  "date": "2025-10-21+1",
+                  "condition": "rain",
+                  "temp_c": 29,
+                  "chances_of_precipitation": 59,
+                  "advice": "Carry umbrella"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "14444a44-83f3-43cb-bd1e-8eb5dd2b00b0",
+        "result": {
+          "itinerary": "**2-Day Plan for Hyderabad (October 21-22, 2025)**\n\n**Day 1: October 21, 2025**\n\n- **Weather**: Rainy with a 59% chance of precipitation. Temperature: 29\u00b0C.  \n- **Advice**: Carry an umbrella.  \n- **Plan**:  \n  - Morning: Visit indoor attractions like **Salar Jung Museum** or **Birla Science Museum**.  \n  - Afternoon: Explore **Charminar** and **Chowmahalla Palace**, but be prepared for rain.  \n  - Evening: Enjoy Hyderabadi cuisine at a covered restaurant like **Paradise Biryani**.  \n\n**Day 2: October 22, 2025**\n\n- **Weather**: Rainy with a 59% chance of precipitation. Temperature: 29\u00b0C.  \n- **Advice**: Carry an umbrella.  \n- **Plan**:  \n  - Morning: Visit **Golconda Fort** (mostly covered areas).  \n  - Afternoon: Shop at **Laad Bazaar** for traditional bangles and pearls.  \n  - Evening: Relax at **Hussain Sagar Lake** or visit **Snow World** for an indoor activity.  \n\n**Tips**: Wear waterproof shoes and pack light rain gear for both days."
+        }
+      },
+      "response_received_at": "2025-09-18T12:43:39.894299Z"
+    }
+  },
+  {
+    "request_id": "b2fe0e5d-63f5-44e0-8132-773f230507a1",
+    "created_at": "2025-09-18T12:43:40.494716Z",
+    "user_payload": {
+      "city": "Pune",
+      "start_date": "2025-10-15",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-15+0",
+        "sent_at": "2025-09-18T12:43:40.495159Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "b25156c3-fb9f-4b24-913e-46ae9a4e3696",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Pune",
+            "date": "2025-10-15+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "b25156c3-fb9f-4b24-913e-46ae9a4e3696",
+          "result": {
+            "structured": {
+              "city": "Pune",
+              "date": "2025-10-15+0",
+              "condition": "rain",
+              "temp_c": 29,
+              "chances_of_precipitation": 64,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Pune",
+          "date": "2025-10-15+0",
+          "condition": "rain",
+          "temp_c": 29,
+          "chances_of_precipitation": 64,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:43:40.500708Z"
+      },
+      {
+        "date": "2025-10-15+1",
+        "sent_at": "2025-09-18T12:43:40.801040Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "a6585a28-f97b-48f5-8e20-6b58517ca8e9",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Pune",
+            "date": "2025-10-15+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "a6585a28-f97b-48f5-8e20-6b58517ca8e9",
+          "result": {
+            "structured": {
+              "city": "Pune",
+              "date": "2025-10-15+1",
+              "condition": "rain",
+              "temp_c": 29,
+              "chances_of_precipitation": 64,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Pune",
+          "date": "2025-10-15+1",
+          "condition": "rain",
+          "temp_c": 29,
+          "chances_of_precipitation": 64,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:43:40.805968Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:43:41.106208Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "b2fe0e5d-63f5-44e0-8132-773f230507a1",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Pune",
+          "start_date": "2025-10-15",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "b25156c3-fb9f-4b24-913e-46ae9a4e3696",
+              "result": {
+                "structured": {
+                  "city": "Pune",
+                  "date": "2025-10-15+0",
+                  "condition": "rain",
+                  "temp_c": 29,
+                  "chances_of_precipitation": 64,
+                  "advice": "Carry umbrella"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "a6585a28-f97b-48f5-8e20-6b58517ca8e9",
+              "result": {
+                "structured": {
+                  "city": "Pune",
+                  "date": "2025-10-15+1",
+                  "condition": "rain",
+                  "temp_c": 29,
+                  "chances_of_precipitation": 64,
+                  "advice": "Carry umbrella"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "b2fe0e5d-63f5-44e0-8132-773f230507a1",
+        "result": {
+          "itinerary": "**2-Day Plan for Pune, Starting October 15, 2025**\n\n**Day 1: October 15, 2025**\n- **Weather**: Rainy with a 64% chance of precipitation. Temperature: 29\u00b0C.\n- **Advice**: Carry an umbrella.\n- **Plan**: \n  - Morning: Visit indoor attractions like the Raja Dinkar Kelkar Museum or the Darshan Museum to explore Pune's rich culture and history.\n  - Afternoon: Enjoy a traditional Maharashtrian lunch at a local restaurant with covered seating.\n  - Evening: Head to the Pune Central Mall or Phoenix Marketcity for shopping and entertainment, staying dry from the rain.\n\n**Day 2: October 6, 2025**\n- **Weather**: Rainy with a 64% chance of precipitation. Temperature: 29\u00b0C.\n- **Advice**: Carry an umbrella.\n- **Plan**:\n  - Morning: Explore the Aga Khan Palace, a historical landmark with covered walkways and beautiful architecture.\n  - Afternoon: Visit the Osho Ashram or Shri Durga Mata Temple for a serene and peaceful experience, followed by a cozy caf\u00e9 for tea or coffee.\n  - Evening: Attend a cultural performance or enjoy a movie at a local cinema to wrap up the day comfortably indoors.\n\nRemember to stay updated with the weather and adjust plans accordingly. Enjoy your time in Pune!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:43:51.667990Z"
+    }
+  },
+  {
+    "request_id": "cec03392-6e4e-4d98-a966-7b27e22c01ff",
+    "created_at": "2025-09-18T12:43:52.268321Z",
+    "user_payload": {
+      "city": "Ahmedabad",
+      "start_date": "2025-10-16",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-16+0",
+        "sent_at": "2025-09-18T12:43:52.268467Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "60154ee1-1d32-45d2-84a6-5b2507831773",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Ahmedabad",
+            "date": "2025-10-16+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "60154ee1-1d32-45d2-84a6-5b2507831773",
+          "result": {
+            "structured": {
+              "city": "Ahmedabad",
+              "date": "2025-10-16+0",
+              "condition": "rain",
+              "temp_c": 29,
+              "chances_of_precipitation": 59,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Ahmedabad",
+          "date": "2025-10-16+0",
+          "condition": "rain",
+          "temp_c": 29,
+          "chances_of_precipitation": 59,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:43:52.273147Z"
+      },
+      {
+        "date": "2025-10-16+1",
+        "sent_at": "2025-09-18T12:43:52.573378Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "1ab35f76-52c3-4fd2-8999-72fe4e9ea94f",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Ahmedabad",
+            "date": "2025-10-16+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "1ab35f76-52c3-4fd2-8999-72fe4e9ea94f",
+          "result": {
+            "structured": {
+              "city": "Ahmedabad",
+              "date": "2025-10-16+1",
+              "condition": "rain",
+              "temp_c": 29,
+              "chances_of_precipitation": 59,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Ahmedabad",
+          "date": "2025-10-16+1",
+          "condition": "rain",
+          "temp_c": 29,
+          "chances_of_precipitation": 59,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:43:52.577177Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:43:52.877362Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "cec03392-6e4e-4d98-a966-7b27e22c01ff",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Ahmedabad",
+          "start_date": "2025-10-16",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "60154ee1-1d32-45d2-84a6-5b2507831773",
+              "result": {
+                "structured": {
+                  "city": "Ahmedabad",
+                  "date": "2025-10-16+0",
+                  "condition": "rain",
+                  "temp_c": 29,
+                  "chances_of_precipitation": 59,
+                  "advice": "Carry umbrella"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "1ab35f76-52c3-4fd2-8999-72fe4e9ea94f",
+              "result": {
+                "structured": {
+                  "city": "Ahmedabad",
+                  "date": "2025-10-16+1",
+                  "condition": "rain",
+                  "temp_c": 29,
+                  "chances_of_precipitation": 59,
+                  "advice": "Carry umbrella"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "cec03392-6e4e-4d98-a966-7b27e22c01ff",
+        "result": {
+          "itinerary": "**2-Day Plan for Ahmedabad (October 16-17, 2025)**\n\n**Day 1: October 16, 2025**\n- **Weather**: Rainy with a 59% chance of precipitation. Temperature: 29\u00b0C.\n- **Advice**: Carry an umbrella.\n- **Plan**:\n  - Morning: Visit indoor attractions like the Calico Museum of Textiles or the Sardar Vallabhbhai Patel National Memorial.\n  - Afternoon: Explore the historic Sabarmati Ashram, followed by a traditional Gujarati lunch at a local restaurant.\n  - Evening: Stroll along the Sabarmati Riverfront, enjoying the views and street food (if rain permits, otherwise opt for an indoor activity like shopping at AlphaOne Mall).\n\n**Day 2: October 17, 2025**\n- **Weather**: Rainy with a 59% chance of precipitation. Temperature: 29\u00b0C.\n- **Advice**: Carry an umbrella.\n- **Plan**:\n  - Morning: Visit the Adalaj Stepwell, a stunning architectural marvel, followed by a visit to the Akshardham Temple (if rain is light).\n  - Afternoon: Enjoy a cultural experience at the Conflictorium or the Kite Museum.\n  - Evening: Indulge in a food tour, sampling local delicacies like dhokla, khandvi, and fafda, or opt for a cozy dinner at a rooftop restaurant with rain-protected seating.\n\nRemember to stay updated on weather conditions and adjust plans accordingly. Enjoy your trip to Ahmedabad!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:43:57.785287Z"
+    }
+  },
+  {
+    "request_id": "4539d251-fb12-44f2-ac1f-1b21195e6f04",
+    "created_at": "2025-09-18T12:43:58.385632Z",
+    "user_payload": {
+      "city": "Jaipur",
+      "start_date": "2025-10-17",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-17+0",
+        "sent_at": "2025-09-18T12:43:58.385789Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "daef8f9f-1a9c-4555-8400-de692c73c83c",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Jaipur",
+            "date": "2025-10-17+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "daef8f9f-1a9c-4555-8400-de692c73c83c",
+          "result": {
+            "structured": {
+              "city": "Jaipur",
+              "date": "2025-10-17+0",
+              "condition": "clear",
+              "temp_c": 26,
+              "chances_of_precipitation": 20,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Jaipur",
+          "date": "2025-10-17+0",
+          "condition": "clear",
+          "temp_c": 26,
+          "chances_of_precipitation": 20,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:58.390344Z"
+      },
+      {
+        "date": "2025-10-17+1",
+        "sent_at": "2025-09-18T12:43:58.690573Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "93425538-4288-4398-af63-f746313fa78a",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Jaipur",
+            "date": "2025-10-17+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "93425538-4288-4398-af63-f746313fa78a",
+          "result": {
+            "structured": {
+              "city": "Jaipur",
+              "date": "2025-10-17+1",
+              "condition": "clear",
+              "temp_c": 26,
+              "chances_of_precipitation": 20,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Jaipur",
+          "date": "2025-10-17+1",
+          "condition": "clear",
+          "temp_c": 26,
+          "chances_of_precipitation": 20,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:43:58.694650Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:43:58.994848Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "4539d251-fb12-44f2-ac1f-1b21195e6f04",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Jaipur",
+          "start_date": "2025-10-17",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "daef8f9f-1a9c-4555-8400-de692c73c83c",
+              "result": {
+                "structured": {
+                  "city": "Jaipur",
+                  "date": "2025-10-17+0",
+                  "condition": "clear",
+                  "temp_c": 26,
+                  "chances_of_precipitation": 20,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "93425538-4288-4398-af63-f746313fa78a",
+              "result": {
+                "structured": {
+                  "city": "Jaipur",
+                  "date": "2025-10-17+1",
+                  "condition": "clear",
+                  "temp_c": 26,
+                  "chances_of_precipitation": 20,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "4539d251-fb12-44f2-ac1f-1b21195e6f04",
+        "result": {
+          "itinerary": "**Jaipur 2-Day Plan (October 17-18, 2025)**\n\n**Day 1: October 17, 2025**\n- Weather: Clear skies, 26\u00b0C, 20% chance of precipitation. Sunglasses recommended.\n- Morning: Visit the iconic Hawa Mahal and explore the City Palace complex.\n- Afternoon: Head to the Jantar Mantar observatory and learn about its historical significance.\n- Evening: Stroll through the vibrant Bapu Bazaar for shopping and local snacks.\n\n**Day 2: October 18, 2025**\n- Weather: Clear skies, 26\u00b0C, 20% chance of precipitation. Sunglasses recommended.\n- Morning: Visit the majestic Amber Fort and enjoy the scenic views.\n- Afternoon: Explore the beautiful Jal Mahal and take a leisurely walk around Man Sagar Lake.\n- Evening: Relax at a rooftop restaurant, savoring Rajasthani cuisine while admiring the city's sunset.\n\nNote: Since the weather is expected to be clear and warm on both days, make sure to stay hydrated, wear sunscreen, and follow the advice to wear sunglasses. Enjoy your trip to Jaipur!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:02.139038Z"
+    }
+  },
+  {
+    "request_id": "62fe77ee-773d-4bcb-82e1-9b532462614d",
+    "created_at": "2025-09-18T12:44:02.739328Z",
+    "user_payload": {
+      "city": "Lucknow",
+      "start_date": "2025-10-18",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-18+0",
+        "sent_at": "2025-09-18T12:44:02.739466Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "40c5a6ea-1ec3-419d-8a3d-6bc11b96f1ee",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Lucknow",
+            "date": "2025-10-18+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "40c5a6ea-1ec3-419d-8a3d-6bc11b96f1ee",
+          "result": {
+            "structured": {
+              "city": "Lucknow",
+              "date": "2025-10-18+0",
+              "condition": "clear",
+              "temp_c": 27,
+              "chances_of_precipitation": 33,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Lucknow",
+          "date": "2025-10-18+0",
+          "condition": "clear",
+          "temp_c": 27,
+          "chances_of_precipitation": 33,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:02.744150Z"
+      },
+      {
+        "date": "2025-10-18+1",
+        "sent_at": "2025-09-18T12:44:03.044403Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "55ac0483-ded7-4bb2-ab6b-7d8d35dbad29",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Lucknow",
+            "date": "2025-10-18+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "55ac0483-ded7-4bb2-ab6b-7d8d35dbad29",
+          "result": {
+            "structured": {
+              "city": "Lucknow",
+              "date": "2025-10-18+1",
+              "condition": "clear",
+              "temp_c": 27,
+              "chances_of_precipitation": 33,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Lucknow",
+          "date": "2025-10-18+1",
+          "condition": "clear",
+          "temp_c": 27,
+          "chances_of_precipitation": 33,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:03.048546Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:03.348858Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "62fe77ee-773d-4bcb-82e1-9b532462614d",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Lucknow",
+          "start_date": "2025-10-18",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "40c5a6ea-1ec3-419d-8a3d-6bc11b96f1ee",
+              "result": {
+                "structured": {
+                  "city": "Lucknow",
+                  "date": "2025-10-18+0",
+                  "condition": "clear",
+                  "temp_c": 27,
+                  "chances_of_precipitation": 33,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "55ac0483-ded7-4bb2-ab6b-7d8d35dbad29",
+              "result": {
+                "structured": {
+                  "city": "Lucknow",
+                  "date": "2025-10-18+1",
+                  "condition": "clear",
+                  "temp_c": 27,
+                  "chances_of_precipitation": 33,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "62fe77ee-773d-4bcb-82e1-9b532462614d",
+        "result": {
+          "itinerary": "**2-Day Plan for Lucknow, Starting October 18, 2025**\n\n**Day 1: October 18, 2025**\n- **Weather**: Clear skies, 27\u00b0C, 33% chance of precipitation.  \n- **Activities**:  \n  - Visit historical sites like Bara Imambara and Chota Imambara in the morning.  \n  - Explore the Lucknow Residency and Museum in the afternoon.  \n  - Enjoy a leisurely evening stroll at Hazratganj Market for shopping and local cuisine.  \n- **Advice**: Wear sunglasses and stay hydrated.  \n\n**Day 2: October 19, 2025**  \n- **Weather**: Clear skies, 27\u00b0C, 33% chance of precipitation.  \n- **Activities**:  \n  - Start the day with a visit to Rumi Darwaza, followed by the State Museum.  \n  - Spend the afternoon at the Ambedkar Memorial Park.  \n  - End the day with a traditional Awadhi dinner at a local restaurant.  \n- **Advice**: Carry sunglasses and light rain gear, just in case.  \n\nEnjoy your trip to Lucknow!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:06.380949Z"
+    }
+  },
+  {
+    "request_id": "ce9c1236-5e12-431f-9be4-d12e933b8b43",
+    "created_at": "2025-09-18T12:44:06.981278Z",
+    "user_payload": {
+      "city": "Surat",
+      "start_date": "2025-10-19",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-19+0",
+        "sent_at": "2025-09-18T12:44:06.981432Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "1e423913-810b-4b41-a5f5-b36cd320e709",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Surat",
+            "date": "2025-10-19+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "1e423913-810b-4b41-a5f5-b36cd320e709",
+          "result": {
+            "structured": {
+              "city": "Surat",
+              "date": "2025-10-19+0",
+              "condition": "clear",
+              "temp_c": 25,
+              "chances_of_precipitation": 7,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Surat",
+          "date": "2025-10-19+0",
+          "condition": "clear",
+          "temp_c": 25,
+          "chances_of_precipitation": 7,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:06.985974Z"
+      },
+      {
+        "date": "2025-10-19+1",
+        "sent_at": "2025-09-18T12:44:07.286188Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "d881bea8-88be-4de3-9b5c-c0051ec8dc63",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Surat",
+            "date": "2025-10-19+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "d881bea8-88be-4de3-9b5c-c0051ec8dc63",
+          "result": {
+            "structured": {
+              "city": "Surat",
+              "date": "2025-10-19+1",
+              "condition": "clear",
+              "temp_c": 25,
+              "chances_of_precipitation": 7,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Surat",
+          "date": "2025-10-19+1",
+          "condition": "clear",
+          "temp_c": 25,
+          "chances_of_precipitation": 7,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:07.290149Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:07.590368Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "ce9c1236-5e12-431f-9be4-d12e933b8b43",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Surat",
+          "start_date": "2025-10-19",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "1e423913-810b-4b41-a5f5-b36cd320e709",
+              "result": {
+                "structured": {
+                  "city": "Surat",
+                  "date": "2025-10-19+0",
+                  "condition": "clear",
+                  "temp_c": 25,
+                  "chances_of_precipitation": 7,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "d881bea8-88be-4de3-9b5c-c0051ec8dc63",
+              "result": {
+                "structured": {
+                  "city": "Surat",
+                  "date": "2025-10-19+1",
+                  "condition": "clear",
+                  "temp_c": 25,
+                  "chances_of_precipitation": 7,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "ce9c1236-5e12-431f-9be4-d12e933b8b43",
+        "result": {
+          "itinerary": "**2-Day Plan for Surat, Starting 2025-10-19**\n\n**Day 1: 2025-10-19**\n- **Weather**: Clear skies, 25\u00b0C, low chance of precipitation (7%)  \n- **Activity**: Explore Surat\u2019s historical landmarks like the Dutch Garden or Surat Castle. Enjoy outdoor activities like a stroll along the Tapi River.  \n- **Advice**: Wear sunglasses and stay hydrated.  \n\n**Day 2: 2025-10-20**  \n- **Weather**: Clear skies, 25\u00b0C, low chance of precipitation (7%)  \n- **Activity**: Visit the Sardar Patel Museum or shop for Surat\u2019s famous textiles and diamonds. End the day with a sunset view at Dumas Beach.  \n- **Advice**: Continue using sunglasses and sunscreen for prolonged outdoor exposure."
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:13.641544Z"
+    }
+  },
+  {
+    "request_id": "d213c04d-ff61-43cd-9f0d-c41190c1781f",
+    "created_at": "2025-09-18T12:44:14.242040Z",
+    "user_payload": {
+      "city": "Nagpur",
+      "start_date": "2025-10-20",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-20+0",
+        "sent_at": "2025-09-18T12:44:14.242191Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "74ab92b9-da6f-4350-a503-c108f5fac5ae",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Nagpur",
+            "date": "2025-10-20+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "74ab92b9-da6f-4350-a503-c108f5fac5ae",
+          "result": {
+            "structured": {
+              "city": "Nagpur",
+              "date": "2025-10-20+0",
+              "condition": "clear",
+              "temp_c": 26,
+              "chances_of_precipitation": 20,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Nagpur",
+          "date": "2025-10-20+0",
+          "condition": "clear",
+          "temp_c": 26,
+          "chances_of_precipitation": 20,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:14.246373Z"
+      },
+      {
+        "date": "2025-10-20+1",
+        "sent_at": "2025-09-18T12:44:14.546564Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "d001b23b-a6dc-49ff-83b9-09b8e6ada7f7",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Nagpur",
+            "date": "2025-10-20+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "d001b23b-a6dc-49ff-83b9-09b8e6ada7f7",
+          "result": {
+            "structured": {
+              "city": "Nagpur",
+              "date": "2025-10-20+1",
+              "condition": "clear",
+              "temp_c": 26,
+              "chances_of_precipitation": 20,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Nagpur",
+          "date": "2025-10-20+1",
+          "condition": "clear",
+          "temp_c": 26,
+          "chances_of_precipitation": 20,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:14.550853Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:14.850950Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "d213c04d-ff61-43cd-9f0d-c41190c1781f",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Nagpur",
+          "start_date": "2025-10-20",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "74ab92b9-da6f-4350-a503-c108f5fac5ae",
+              "result": {
+                "structured": {
+                  "city": "Nagpur",
+                  "date": "2025-10-20+0",
+                  "condition": "clear",
+                  "temp_c": 26,
+                  "chances_of_precipitation": 20,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "d001b23b-a6dc-49ff-83b9-09b8e6ada7f7",
+              "result": {
+                "structured": {
+                  "city": "Nagpur",
+                  "date": "2025-10-20+1",
+                  "condition": "clear",
+                  "temp_c": 26,
+                  "chances_of_precipitation": 20,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "d213c04d-ff61-43cd-9f0d-c41190c1781f",
+        "result": {
+          "itinerary": "**2-Day Plan for Nagpur, Starting October 20, 2025**\n\n**Day 1: October 20, 2025**\n- **Weather**: Clear skies, 26\u00b0C, 20% chance of precipitation.  \n- **Activity**: Explore Nagpur\u2019s outdoor attractions like the **Nagpur Central Museum** or **Seminary Hills** in the morning.  \n- **Afternoon**: Visit **Deekshabhoomi**, a significant Buddhist monument, and enjoy a leisurely lunch at a local restaurant.  \n- **Evening**: Stroll through **Sitabuldi Fort** or relax at **Futala Lake** with sunglasses on, as recommended.  \n\n**Day 2: October 21, 2025**  \n- **Weather**: Clear skies, 26\u00b0C, 20% chance of precipitation.  \n- **Activity**: Start with a visit to **Raman Science Centre** or **Maharajbagh Zoo**.  \n- **Afternoon**: Explore **Khindsi Lake** for water activities or enjoy a picnic in the pleasant weather.  \n- **Evening**: Shop at **Dharampeth** or **Sitabuldi markets** and end the day with local cuisine at a popular eatery.  \n\nPack light, wear sunscreen, and carry sunglasses for both days!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:23.323442Z"
+    }
+  },
+  {
+    "request_id": "d526bea0-b5d3-46b5-b5bf-8022df2b2842",
+    "created_at": "2025-09-18T12:44:23.923758Z",
+    "user_payload": {
+      "city": "Visakhapatnam",
+      "start_date": "2025-10-21",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-21+0",
+        "sent_at": "2025-09-18T12:44:23.923996Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "575e6bd4-8fc5-4c8a-9ced-b5f369745840",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Visakhapatnam",
+            "date": "2025-10-21+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "575e6bd4-8fc5-4c8a-9ced-b5f369745840",
+          "result": {
+            "structured": {
+              "city": "Visakhapatnam",
+              "date": "2025-10-21+0",
+              "condition": "rain",
+              "temp_c": 28,
+              "chances_of_precipitation": 41,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Visakhapatnam",
+          "date": "2025-10-21+0",
+          "condition": "rain",
+          "temp_c": 28,
+          "chances_of_precipitation": 41,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:44:23.927731Z"
+      },
+      {
+        "date": "2025-10-21+1",
+        "sent_at": "2025-09-18T12:44:24.228027Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "2fdcadcc-5d06-4c54-8806-a4c8cffdd379",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Visakhapatnam",
+            "date": "2025-10-21+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "2fdcadcc-5d06-4c54-8806-a4c8cffdd379",
+          "result": {
+            "structured": {
+              "city": "Visakhapatnam",
+              "date": "2025-10-21+1",
+              "condition": "rain",
+              "temp_c": 28,
+              "chances_of_precipitation": 41,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Visakhapatnam",
+          "date": "2025-10-21+1",
+          "condition": "rain",
+          "temp_c": 28,
+          "chances_of_precipitation": 41,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:44:24.232224Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:24.532445Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "d526bea0-b5d3-46b5-b5bf-8022df2b2842",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Visakhapatnam",
+          "start_date": "2025-10-21",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "575e6bd4-8fc5-4c8a-9ced-b5f369745840",
+              "result": {
+                "structured": {
+                  "city": "Visakhapatnam",
+                  "date": "2025-10-21+0",
+                  "condition": "rain",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 41,
+                  "advice": "Carry umbrella"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "2fdcadcc-5d06-4c54-8806-a4c8cffdd379",
+              "result": {
+                "structured": {
+                  "city": "Visakhapatnam",
+                  "date": "2025-10-21+1",
+                  "condition": "rain",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 41,
+                  "advice": "Carry umbrella"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "d526bea0-b5d3-46b5-b5bf-8022df2b2842",
+        "result": {
+          "itinerary": "**2-Day Plan for Visakhapatnam (October 21-22, 2025)**\n\n**Day 1: October 21, 2025**\n- Weather: Rain, 28\u00b0C, 41% chance of precipitation.  \n- **Morning:** Visit the INS Kursura Submarine Museum and explore the historic submarine.  \n- **Afternoon:** Head to the Visakha Museum to learn about the region\u2019s history and culture.  \n- **Evening:** Stroll along the RK Beach promenade, enjoying the seaside views. **Remember to carry an umbrella!**  \n\n**Day 2: October 22, 2025**  \n- Weather: Rain, 28\u00b0C, 41% chance of precipitation.  \n- **Morning:** Visit the Simhachalam Temple, a renowned religious site.  \n- **Afternoon:** Explore the Kailasagiri Hill Park for scenic views and ropeway rides.  \n- **Evening:** Relax at the Yarada Beach, away from the city hustle. **Keep your umbrella handy!**  \n\nBoth days are expected to be rainy, so plan indoor activities or carry rain gear for outdoor exploration. Enjoy your trip!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:29.084136Z"
+    }
+  },
+  {
+    "request_id": "6e3b57ac-3999-43df-821a-33fe14d93e85",
+    "created_at": "2025-09-18T12:44:29.684479Z",
+    "user_payload": {
+      "city": "Bhopal",
+      "start_date": "2025-10-15",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-15+0",
+        "sent_at": "2025-09-18T12:44:29.684664Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "46f83226-1db2-49d6-8f52-a92aa90da898",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Bhopal",
+            "date": "2025-10-15+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "46f83226-1db2-49d6-8f52-a92aa90da898",
+          "result": {
+            "structured": {
+              "city": "Bhopal",
+              "date": "2025-10-15+0",
+              "condition": "clear",
+              "temp_c": 26,
+              "chances_of_precipitation": 20,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Bhopal",
+          "date": "2025-10-15+0",
+          "condition": "clear",
+          "temp_c": 26,
+          "chances_of_precipitation": 20,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:29.689805Z"
+      },
+      {
+        "date": "2025-10-15+1",
+        "sent_at": "2025-09-18T12:44:29.990059Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "7097d67e-63de-486d-ac44-5920174975e6",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Bhopal",
+            "date": "2025-10-15+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "7097d67e-63de-486d-ac44-5920174975e6",
+          "result": {
+            "structured": {
+              "city": "Bhopal",
+              "date": "2025-10-15+1",
+              "condition": "clear",
+              "temp_c": 26,
+              "chances_of_precipitation": 20,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Bhopal",
+          "date": "2025-10-15+1",
+          "condition": "clear",
+          "temp_c": 26,
+          "chances_of_precipitation": 20,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:29.993675Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:30.294085Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "6e3b57ac-3999-43df-821a-33fe14d93e85",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Bhopal",
+          "start_date": "2025-10-15",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "46f83226-1db2-49d6-8f52-a92aa90da898",
+              "result": {
+                "structured": {
+                  "city": "Bhopal",
+                  "date": "2025-10-15+0",
+                  "condition": "clear",
+                  "temp_c": 26,
+                  "chances_of_precipitation": 20,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "7097d67e-63de-486d-ac44-5920174975e6",
+              "result": {
+                "structured": {
+                  "city": "Bhopal",
+                  "date": "2025-10-15+1",
+                  "condition": "clear",
+                  "temp_c": 26,
+                  "chances_of_precipitation": 20,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "6e3b57ac-3999-43df-821a-33fe14d93e85",
+        "result": {
+          "itinerary": "**2-Day Plan for Bhopal, Starting October 15, 2025**\n\n**Day 1: October 15, 2025**\n- **Weather**: Clear skies, 26\u00b0C, 20% chance of precipitation.\n- **Activities**: \n  - Visit the historic Bhopal Old City and explore the vibrant markets.\n  - Tour the magnificent Taj-ul-Masajid, one of the largest mosques in Asia.\n  - Enjoy a leisurely walk around the Upper Lake (Bada Talab) and take a boat ride.\n- **Advice**: Wear sunglasses to protect your eyes from the clear, sunny skies.\n\n**Day 2: October 16, 2025**\n- **Weather**: Clear skies, 26\u00b0C, 20% chance of precipitation (similar to Day 1).\n- **Activities**: \n  - Explore the beautiful Van Vihar National Park, home to various flora and fauna.\n  - Visit the Indira Gandhi Rashtriya Manav Sangrahalaya (National Museum of Mankind) to learn about India's diverse cultures.\n  - End the day with a relaxing stroll through the lush green surroundings of the Regional Science Centre.\n- **Advice**: Continue to wear sunglasses and stay hydrated as the weather remains sunny and warm.\n\nBoth days offer ideal conditions for outdoor activities, so make the most of the clear skies and pleasant temperatures. Enjoy your time in Bhopal!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:36.553839Z"
+    }
+  },
+  {
+    "request_id": "6a509080-22eb-4ab4-bb87-eec245796f88",
+    "created_at": "2025-09-18T12:44:37.154201Z",
+    "user_payload": {
+      "city": "Coimbatore",
+      "start_date": "2025-10-16",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-16+0",
+        "sent_at": "2025-09-18T12:44:37.154356Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "6e80cd9d-ef07-47bb-a0c8-c191993d9103",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Coimbatore",
+            "date": "2025-10-16+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "6e80cd9d-ef07-47bb-a0c8-c191993d9103",
+          "result": {
+            "structured": {
+              "city": "Coimbatore",
+              "date": "2025-10-16+0",
+              "condition": "clear",
+              "temp_c": 25,
+              "chances_of_precipitation": 2,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Coimbatore",
+          "date": "2025-10-16+0",
+          "condition": "clear",
+          "temp_c": 25,
+          "chances_of_precipitation": 2,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:37.158371Z"
+      },
+      {
+        "date": "2025-10-16+1",
+        "sent_at": "2025-09-18T12:44:37.458582Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "9fed8939-5273-41c4-b777-3ed9db219e6b",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Coimbatore",
+            "date": "2025-10-16+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "9fed8939-5273-41c4-b777-3ed9db219e6b",
+          "result": {
+            "structured": {
+              "city": "Coimbatore",
+              "date": "2025-10-16+1",
+              "condition": "clear",
+              "temp_c": 25,
+              "chances_of_precipitation": 2,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Coimbatore",
+          "date": "2025-10-16+1",
+          "condition": "clear",
+          "temp_c": 25,
+          "chances_of_precipitation": 2,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:37.462484Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:37.762677Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "6a509080-22eb-4ab4-bb87-eec245796f88",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Coimbatore",
+          "start_date": "2025-10-16",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "6e80cd9d-ef07-47bb-a0c8-c191993d9103",
+              "result": {
+                "structured": {
+                  "city": "Coimbatore",
+                  "date": "2025-10-16+0",
+                  "condition": "clear",
+                  "temp_c": 25,
+                  "chances_of_precipitation": 2,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "9fed8939-5273-41c4-b777-3ed9db219e6b",
+              "result": {
+                "structured": {
+                  "city": "Coimbatore",
+                  "date": "2025-10-16+1",
+                  "condition": "clear",
+                  "temp_c": 25,
+                  "chances_of_precipitation": 2,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "6a509080-22eb-4ab4-bb87-eec245796f88",
+        "result": {
+          "itinerary": "**2-Day Plan for Coimbatore, Starting 2025-10-16**\n\n**Day 1: 2025-10-16**\n- **Weather**: Clear skies, 25\u00b0C, low chance of precipitation (2%)\n- **Activities**:\n  - Start the day with a visit to Marudamalai Temple, a serene hilltop temple with great views.\n  - Explore the vibrant streets of Coimbatore, including the Town Hall and the historic Forest College Campus.\n  - In the afternoon, head to VOC Park and Zoo for a relaxing stroll and to see various animal species.\n- **Advice**: Wear sunglasses to protect your eyes from the clear, sunny skies.\n\n**Day 2: 2025-10-17**\n- **Weather**: Clear skies, 25\u00b0C, low chance of precipitation (2%)\n- **Activities**:\n  - Visit the Perur Pateeswarar Temple, an ancient temple with intricate carvings and architecture.\n  - Take a short drive to the nearby Kovai Kutralam waterfalls for a refreshing experience.\n  - In the evening, explore the local markets, such as Oppanakara Street, for shopping and trying out traditional Coimbatore cuisine.\n- **Advice**: Continue to wear sunglasses and stay hydrated, as the weather remains clear and warm.\n\nBoth days offer ideal conditions for outdoor activities, so make the most of the clear skies and pleasant temperatures. Enjoy your trip to Coimbatore!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:41.601845Z"
+    }
+  },
+  {
+    "request_id": "06aa9f1b-66e6-4144-9b75-def184a6b531",
+    "created_at": "2025-09-18T12:44:42.202202Z",
+    "user_payload": {
+      "city": "Thiruvananthapuram",
+      "start_date": "2025-10-17",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-17+0",
+        "sent_at": "2025-09-18T12:44:42.202346Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "71a0c1be-6842-4c16-ac85-44e8e6b29417",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Thiruvananthapuram",
+            "date": "2025-10-17+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "71a0c1be-6842-4c16-ac85-44e8e6b29417",
+          "result": {
+            "structured": {
+              "city": "Thiruvananthapuram",
+              "date": "2025-10-17+0",
+              "condition": "clear",
+              "temp_c": 28,
+              "chances_of_precipitation": 36,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Thiruvananthapuram",
+          "date": "2025-10-17+0",
+          "condition": "clear",
+          "temp_c": 28,
+          "chances_of_precipitation": 36,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:42.207024Z"
+      },
+      {
+        "date": "2025-10-17+1",
+        "sent_at": "2025-09-18T12:44:42.507250Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "1a728b14-34d0-4c99-821f-569828aa9c20",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Thiruvananthapuram",
+            "date": "2025-10-17+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "1a728b14-34d0-4c99-821f-569828aa9c20",
+          "result": {
+            "structured": {
+              "city": "Thiruvananthapuram",
+              "date": "2025-10-17+1",
+              "condition": "clear",
+              "temp_c": 28,
+              "chances_of_precipitation": 36,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Thiruvananthapuram",
+          "date": "2025-10-17+1",
+          "condition": "clear",
+          "temp_c": 28,
+          "chances_of_precipitation": 36,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:42.510806Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:42.810999Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "06aa9f1b-66e6-4144-9b75-def184a6b531",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Thiruvananthapuram",
+          "start_date": "2025-10-17",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "71a0c1be-6842-4c16-ac85-44e8e6b29417",
+              "result": {
+                "structured": {
+                  "city": "Thiruvananthapuram",
+                  "date": "2025-10-17+0",
+                  "condition": "clear",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 36,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "1a728b14-34d0-4c99-821f-569828aa9c20",
+              "result": {
+                "structured": {
+                  "city": "Thiruvananthapuram",
+                  "date": "2025-10-17+1",
+                  "condition": "clear",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 36,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "06aa9f1b-66e6-4144-9b75-def184a6b531",
+        "result": {
+          "itinerary": "**2-Day Plan for Thiruvananthapuram, Starting 2025-10-17**\n\n**Day 1: 2025-10-17**\n- **Weather**: Clear skies, 28\u00b0C, 36% chance of precipitation.  \n- **Activity**: Explore the city\u2019s cultural landmarks like Padmanabhaswamy Temple and Napier Museum in the morning.  \n- **Afternoon**: Visit Kovalam Beach for relaxation and water activities.  \n- **Evening**: Stroll through the local markets or enjoy a traditional Kerala meal.  \n- **Advice**: Wear sunglasses and stay hydrated.  \n\n**Day 2: 2025-10-18**  \n- **Weather**: Clear skies, 28\u00b0C, 36% chance of precipitation.  \n- **Activity**: Take a day trip to Ponmudi Hill Station for trekking and nature walks.  \n- **Afternoon**: Visit the Neyyar Dam and Wildlife Sanctuary for wildlife spotting.  \n- **Evening**: Return to Thiruvananthapuram for a cultural performance or a leisurely dinner.  \n- **Advice**: Carry sunglasses and light rain gear, just in case."
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:46.061907Z"
+    }
+  },
+  {
+    "request_id": "0e9cb2ad-848d-4285-a49c-43a4baa53df1",
+    "created_at": "2025-09-18T12:44:46.662245Z",
+    "user_payload": {
+      "city": "Patna",
+      "start_date": "2025-10-18",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-18+0",
+        "sent_at": "2025-09-18T12:44:46.662406Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "d4b64691-0141-4533-981e-0d7eef7ba350",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Patna",
+            "date": "2025-10-18+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "d4b64691-0141-4533-981e-0d7eef7ba350",
+          "result": {
+            "structured": {
+              "city": "Patna",
+              "date": "2025-10-18+0",
+              "condition": "clear",
+              "temp_c": 25,
+              "chances_of_precipitation": 7,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Patna",
+          "date": "2025-10-18+0",
+          "condition": "clear",
+          "temp_c": 25,
+          "chances_of_precipitation": 7,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:46.667564Z"
+      },
+      {
+        "date": "2025-10-18+1",
+        "sent_at": "2025-09-18T12:44:46.967811Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "4c93f829-5e8e-435d-aff7-3070046c039c",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Patna",
+            "date": "2025-10-18+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "4c93f829-5e8e-435d-aff7-3070046c039c",
+          "result": {
+            "structured": {
+              "city": "Patna",
+              "date": "2025-10-18+1",
+              "condition": "clear",
+              "temp_c": 25,
+              "chances_of_precipitation": 7,
+              "advice": "Sunglasses recommended"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Patna",
+          "date": "2025-10-18+1",
+          "condition": "clear",
+          "temp_c": 25,
+          "chances_of_precipitation": 7,
+          "advice": "Sunglasses recommended"
+        },
+        "response_received_at": "2025-09-18T12:44:46.972031Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:47.272229Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "0e9cb2ad-848d-4285-a49c-43a4baa53df1",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Patna",
+          "start_date": "2025-10-18",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "d4b64691-0141-4533-981e-0d7eef7ba350",
+              "result": {
+                "structured": {
+                  "city": "Patna",
+                  "date": "2025-10-18+0",
+                  "condition": "clear",
+                  "temp_c": 25,
+                  "chances_of_precipitation": 7,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "4c93f829-5e8e-435d-aff7-3070046c039c",
+              "result": {
+                "structured": {
+                  "city": "Patna",
+                  "date": "2025-10-18+1",
+                  "condition": "clear",
+                  "temp_c": 25,
+                  "chances_of_precipitation": 7,
+                  "advice": "Sunglasses recommended"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "0e9cb2ad-848d-4285-a49c-43a4baa53df1",
+        "result": {
+          "itinerary": "**Patna 2-Day Plan (October 18-19, 2025)**\n\n**Day 1: October 18, 2025**\n- Weather: Clear skies, 25\u00b0C, low chance of precipitation (7%)\n- Activity: Explore the city's historical landmarks, such as Patna Museum and Golghar, while wearing sunglasses to protect from the clear skies.\n- Evening: Enjoy a stroll along the Ganges River or visit the Patna Planetarium.\n\n**Day 2: October 19, 2025**\n- Weather: Clear skies, 25\u00b0C, low chance of precipitation (7%)\n- Activity: Visit the ancient Mahavir Mandir or take a day trip to the nearby Nalanda University ruins, a UNESCO World Heritage Site.\n- Evening: Experience local cuisine at a traditional Bihari restaurant or attend a cultural performance showcasing the region's rich heritage.\n\nBoth days offer ideal weather conditions for outdoor activities, so make sure to stay hydrated and follow the advice to wear sunglasses. Enjoy your time in Patna!"
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:51.144648Z"
+    }
+  },
+  {
+    "request_id": "55d60277-09c8-4108-865d-f5f6628aceba",
+    "created_at": "2025-09-18T12:44:51.745130Z",
+    "user_payload": {
+      "city": "Ludhiana",
+      "start_date": "2025-10-19",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-19+0",
+        "sent_at": "2025-09-18T12:44:51.745841Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "733f9151-b1d0-4b20-82a6-fe2790696e92",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Ludhiana",
+            "date": "2025-10-19+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "733f9151-b1d0-4b20-82a6-fe2790696e92",
+          "result": {
+            "structured": {
+              "city": "Ludhiana",
+              "date": "2025-10-19+0",
+              "condition": "rain",
+              "temp_c": 28,
+              "chances_of_precipitation": 46,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Ludhiana",
+          "date": "2025-10-19+0",
+          "condition": "rain",
+          "temp_c": 28,
+          "chances_of_precipitation": 46,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:44:51.749714Z"
+      },
+      {
+        "date": "2025-10-19+1",
+        "sent_at": "2025-09-18T12:44:52.050014Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "21d346e5-0d6f-4a06-aa80-dc9640ab3cb0",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Ludhiana",
+            "date": "2025-10-19+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "21d346e5-0d6f-4a06-aa80-dc9640ab3cb0",
+          "result": {
+            "structured": {
+              "city": "Ludhiana",
+              "date": "2025-10-19+1",
+              "condition": "rain",
+              "temp_c": 28,
+              "chances_of_precipitation": 46,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Ludhiana",
+          "date": "2025-10-19+1",
+          "condition": "rain",
+          "temp_c": 28,
+          "chances_of_precipitation": 46,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:44:52.053929Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:52.354211Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "55d60277-09c8-4108-865d-f5f6628aceba",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Ludhiana",
+          "start_date": "2025-10-19",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "733f9151-b1d0-4b20-82a6-fe2790696e92",
+              "result": {
+                "structured": {
+                  "city": "Ludhiana",
+                  "date": "2025-10-19+0",
+                  "condition": "rain",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 46,
+                  "advice": "Carry umbrella"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "21d346e5-0d6f-4a06-aa80-dc9640ab3cb0",
+              "result": {
+                "structured": {
+                  "city": "Ludhiana",
+                  "date": "2025-10-19+1",
+                  "condition": "rain",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 46,
+                  "advice": "Carry umbrella"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "55d60277-09c8-4108-865d-f5f6628aceba",
+        "result": {
+          "itinerary": "**2-Day Plan for Ludhiana (October 19-20, 2025)**\n\n**Day 1: October 19, 2025**\n- Weather: Rainy with a 46% chance of precipitation and a temperature of 28\u00b0C.\n- Plan: Since it's going to rain, plan indoor activities. Visit the Punjab Agricultural & Rural Development Museum to learn about the region's agricultural heritage. Later, explore the local markets like Chaura Bazaar, but remember to carry an umbrella.\n\n**Day 2: October 20, 2025**\n- Weather: Similar to Day 1, rainy with a 46% chance of precipitation and a temperature of 28\u00b0C.\n- Plan: Start the day with a visit to the historic Lodhi Fort. Afterward, head to the Guru Nanak Bhawan for a cultural experience. In the evening, enjoy local Punjabi cuisine at a covered restaurant or caf\u00e9 to avoid the rain.\n\n**Tips for Both Days:**\n- Carry an umbrella and wear waterproof shoes.\n- Consider visiting indoor attractions like museums, malls, or theaters to stay dry.\n- Keep an eye on weather updates for any changes."
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:56.504104Z"
+    }
+  },
+  {
+    "request_id": "6c445e6b-3d59-49af-8f16-a5d12dbca557",
+    "created_at": "2025-09-18T12:44:57.104460Z",
+    "user_payload": {
+      "city": "Vadodara",
+      "start_date": "2025-10-20",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-20+0",
+        "sent_at": "2025-09-18T12:44:57.104639Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "65901b98-c8b7-4bc5-9b8f-392171935301",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Vadodara",
+            "date": "2025-10-20+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "65901b98-c8b7-4bc5-9b8f-392171935301",
+          "result": {
+            "structured": {
+              "city": "Vadodara",
+              "date": "2025-10-20+0",
+              "condition": "rain",
+              "temp_c": 28,
+              "chances_of_precipitation": 46,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Vadodara",
+          "date": "2025-10-20+0",
+          "condition": "rain",
+          "temp_c": 28,
+          "chances_of_precipitation": 46,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:44:57.109852Z"
+      },
+      {
+        "date": "2025-10-20+1",
+        "sent_at": "2025-09-18T12:44:57.410027Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "af17859d-b754-48e7-955b-5213ba833ba2",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Vadodara",
+            "date": "2025-10-20+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "af17859d-b754-48e7-955b-5213ba833ba2",
+          "result": {
+            "structured": {
+              "city": "Vadodara",
+              "date": "2025-10-20+1",
+              "condition": "rain",
+              "temp_c": 28,
+              "chances_of_precipitation": 46,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Vadodara",
+          "date": "2025-10-20+1",
+          "condition": "rain",
+          "temp_c": 28,
+          "chances_of_precipitation": 46,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:44:57.413633Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:57.713848Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "6c445e6b-3d59-49af-8f16-a5d12dbca557",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Vadodara",
+          "start_date": "2025-10-20",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "65901b98-c8b7-4bc5-9b8f-392171935301",
+              "result": {
+                "structured": {
+                  "city": "Vadodara",
+                  "date": "2025-10-20+0",
+                  "condition": "rain",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 46,
+                  "advice": "Carry umbrella"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "af17859d-b754-48e7-955b-5213ba833ba2",
+              "result": {
+                "structured": {
+                  "city": "Vadodara",
+                  "date": "2025-10-20+1",
+                  "condition": "rain",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 46,
+                  "advice": "Carry umbrella"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "6c445e6b-3d59-49af-8f16-a5d12dbca557",
+        "error": {
+          "code": -32000,
+          "message": "internal: headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin', 'x-accel-expires': '0', 'x-debug-trace-id': 'f43e33996aa122d037a7fb5a7a90e84e', 'date': 'Thu, 18 Sep 2025 12:44:57 GMT', 'content-length': '372', 'x-envoy-upstream-service-time': '9', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000'}, status_code: 429, body: {'id': 'c5b961fa-a5cd-4bc2-a158-9fc3b1466b27', 'message': \"You are using a Trial key, which is limited to 10 API calls / minute. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions\"}"
+        }
+      },
+      "response_received_at": "2025-09-18T12:44:57.892167Z"
+    }
+  },
+  {
+    "request_id": "06c283c3-ded1-422b-be4e-9b4478941490",
+    "created_at": "2025-09-18T12:44:58.492506Z",
+    "user_payload": {
+      "city": "Goa",
+      "start_date": "2025-10-21",
+      "n_days": 2,
+      "preferences": {
+        "budget": "moderate",
+        "interests": [
+          "sightseeing",
+          "food"
+        ]
+      }
+    },
+    "weather_calls": [
+      {
+        "date": "2025-10-21+0",
+        "sent_at": "2025-09-18T12:44:58.492645Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "c6d2a280-f4eb-4995-bd95-ebc301b22c87",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Goa",
+            "date": "2025-10-21+0"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "c6d2a280-f4eb-4995-bd95-ebc301b22c87",
+          "result": {
+            "structured": {
+              "city": "Goa",
+              "date": "2025-10-21+0",
+              "condition": "rain",
+              "temp_c": 28,
+              "chances_of_precipitation": 51,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Goa",
+          "date": "2025-10-21+0",
+          "condition": "rain",
+          "temp_c": 28,
+          "chances_of_precipitation": 51,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:44:58.497707Z"
+      },
+      {
+        "date": "2025-10-21+1",
+        "sent_at": "2025-09-18T12:44:58.798045Z",
+        "request": {
+          "jsonrpc": "2.0",
+          "id": "3261df99-3b50-4d1d-baa7-8993140729d0",
+          "method": "get_weather_structured",
+          "params": {
+            "city": "Goa",
+            "date": "2025-10-21+1"
+          }
+        },
+        "status_code": 200,
+        "response": {
+          "jsonrpc": "2.0",
+          "id": "3261df99-3b50-4d1d-baa7-8993140729d0",
+          "result": {
+            "structured": {
+              "city": "Goa",
+              "date": "2025-10-21+1",
+              "condition": "rain",
+              "temp_c": 28,
+              "chances_of_precipitation": 51,
+              "advice": "Carry umbrella"
+            }
+          }
+        },
+        "extracted_structured": {
+          "city": "Goa",
+          "date": "2025-10-21+1",
+          "condition": "rain",
+          "temp_c": 28,
+          "chances_of_precipitation": 51,
+          "advice": "Carry umbrella"
+        },
+        "response_received_at": "2025-09-18T12:44:58.802119Z"
+      }
+    ],
+    "planner_call": {
+      "sent_at": "2025-09-18T12:44:59.102323Z",
+      "request": {
+        "jsonrpc": "2.0",
+        "id": "06c283c3-ded1-422b-be4e-9b4478941490",
+        "method": "plan_from_structured",
+        "params": {
+          "city": "Goa",
+          "start_date": "2025-10-21",
+          "n_days": 2,
+          "preferences": {
+            "budget": "moderate",
+            "interests": [
+              "sightseeing",
+              "food"
+            ]
+          },
+          "weather_structured": [
+            {
+              "jsonrpc": "2.0",
+              "id": "c6d2a280-f4eb-4995-bd95-ebc301b22c87",
+              "result": {
+                "structured": {
+                  "city": "Goa",
+                  "date": "2025-10-21+0",
+                  "condition": "rain",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 51,
+                  "advice": "Carry umbrella"
+                }
+              }
+            },
+            {
+              "jsonrpc": "2.0",
+              "id": "3261df99-3b50-4d1d-baa7-8993140729d0",
+              "result": {
+                "structured": {
+                  "city": "Goa",
+                  "date": "2025-10-21+1",
+                  "condition": "rain",
+                  "temp_c": 28,
+                  "chances_of_precipitation": 51,
+                  "advice": "Carry umbrella"
+                }
+              }
+            }
+          ]
+        }
+      },
+      "status_code": 200,
+      "response": {
+        "jsonrpc": "2.0",
+        "id": "06c283c3-ded1-422b-be4e-9b4478941490",
+        "result": {
+          "itinerary": "**2-Day Plan for Goa (October 21-22, 2025)**\n\n**Day 1: October 21, 2025**\n\n- **Weather**: Rainy with a 51% chance of precipitation. Temperature: 28\u00b0C.\n- **Advice**: Carry an umbrella.\n- **Plan**:\n  - Morning: Visit indoor attractions like the Goa State Museum or the Naval Aviation Museum.\n  - Afternoon: Enjoy a leisurely lunch at a local restaurant, followed by shopping at the indoor markets in Panjim or Margao.\n  - Evening: Attend a cultural performance or enjoy a relaxing dinner at a rooftop restaurant with a view.\n\n**Day 2: October 22, 2025**\n\n- **Weather**: Rainy with a 51% chance of precipitation. Temperature: 28\u00b0C.\n- **Advice**: Carry an umbrella.\n- **Plan**:\n  - Morning: Explore the historic churches and cathedrals of Old Goa, such as the Basilica of Bom Jesus and S\u00e9 Cathedral.\n  - Afternoon: Visit the Goa Science Centre or take a cooking class to learn about local cuisine.\n  - Evening: Wind down with a sunset cruise along the Mandovi River, followed by dinner at a beachside shack (if weather permits) or an indoor restaurant.\n\n**Tips for Both Days**:\n- Wear lightweight, waterproof clothing and comfortable shoes.\n- Stay updated on weather conditions and adjust plans accordingly.\n- Consider visiting spas or wellness centers for a relaxing indoor experience if the rain becomes heavy."
+        }
+      },
+      "response_received_at": "2025-09-18T12:45:04.014344Z"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "agent_id": "weatheragent-8809f215",
+  "name": "WeatherAgent",
+  "version": "0.1",
+  "endpoint": "http://127.0.0.1:8102/rpc",
+  "methods": [
+    "get_weather",
+    "get_weather_structured"
+  ]
+}

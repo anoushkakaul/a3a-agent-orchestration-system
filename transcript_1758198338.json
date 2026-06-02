@@ -1,0 +1,26 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "4f86101a-5895-466e-9016-902ffa99f615",
+    "method": "plan_from_weather",
+    "params": {
+      "city": "Bengaluru",
+      "start_date": "2025-10-10",
+      "n_days": 2,
+      "preferences": {
+        "budget": "low",
+        "interests": [
+          "temples",
+          "food"
+        ]
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": "4f86101a-5895-466e-9016-902ffa99f615",
+    "result": {
+      "itinerary": "**Bengaluru 2-Day Itinerary (Oct 10-11, 2025)**  \n**Weather Note:** Carry an umbrella; 59% chance of rain both days.  \n\n**Day 1: Temples & Local Food**  \n- **Morning:**  \n  - Visit **Doddabettahalli Sri Ranganathaswamy Temple** (9 AM\u201312 PM).  \n  - Breakfast at **Vidyarthi Bhavan** (try their famous masala dosa).  \n- **Afternoon:**  \n  - Explore **Bull Temple** (12:30 PM\u20132 PM).  \n  - Lunch at **Mavalli Tiffin Room (MTR)** (budget-friendly South Indian thali).  \n- **Evening:**  \n  - Visit **ISKCON Temple** (4 PM\u20136 PM; evening aarti).  \n  - Dinner at **Kanti Sweets** (affordable chaats and sweets).  \n\n**Day 2: Heritage Temples & Street Food**  \n- **Morning:**  \n  - Visit **Halasuru Someshwara Temple** (9 AM\u201311 AM).  \n  - Breakfast at **Brahmins\u2019 Coffee Bar** (idli vada).  \n- **Afternoon:**  \n  - Explore **Kote Venkataramana Temple** (12 PM\u20131:30 PM).  \n  - Lunch at **Shri Sagar CTR** (budget-friendly benne masala dosa).  \n- **Evening:**  \n  - Stroll **Commercial Street** for street food (try akki roti or jolada rotti).  \n  - End with dessert at **Gopalan Ice Creams**.  \n\n**Budget Tips:** Use BMTC buses or metro for cheap travel. Avoid peak dining hours for smaller crowds."
+    }
+  }
+}

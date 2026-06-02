@@ -1,0 +1,25 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "341fdb94-1e7b-40cf-91ba-313f13b85ac8",
+    "method": "plan_from_weather",
+    "params": {
+      "city": "Chennai",
+      "start_date": "2025-10-20",
+      "n_days": 2,
+      "preferences": {
+        "interests": [
+          "food",
+          "sightseeing"
+        ]
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": "341fdb94-1e7b-40cf-91ba-313f13b85ac8",
+    "result": {
+      "itinerary": "**Chennai 2-Day Itinerary (2025-10-20 to 2025-10-21)**  \n\n**Day 1: 2025-10-20 (33% chance of rain)**  \n**Morning:**  \n- **Breakfast:** Start with traditional South Indian fare at **Murugan Idli Shop** (T. Nagar). Try their famous idlis and dosas.  \n- **Sightseeing:** Visit **Kapaleeshwarar Temple**, a vibrant Dravidian-style temple. Carry an umbrella for rain.  \n\n**Afternoon:**  \n- **Lunch:** Head to **Dakshin** (ITC Grand Chola) for authentic Chettinad cuisine.  \n- **Sightseeing:** Explore **Fort St. George** and the **St. Mary\u2019s Church** nearby.  \n\n**Evening:**  \n- **Snack:** Enjoy street food like vada pav and panipuri at **Nungambakkam**.  \n- **Activity:** Stroll along **Marina Beach** (check weather before heading out).  \n\n**Night:**  \n- **Dinner:** Dine at **Amethyst** (Gemini Circle) for a cozy, multi-cuisine experience.  \n\n**Day 2: 2025-10-21 (33% chance of rain)**  \n**Morning:**  \n- **Breakfast:** Try **Pondicherry Caf\u00e9** (The Leela Palace) for a buffet with local and international options.  \n- **Sightseeing:** Visit **Government Museum Chennai** and **National Art Gallery** (indoor activity, ideal if raining).  \n\n**Afternoon:**  \n- **Lunch:** Savor seafood at **The Marina** (Park Hyatt) with beach views.  \n- **Sightseeing:** Explore **San Thome Basilica**, a"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "agent_id": "planneragent-e7616d08",
+  "name": "PlannerAgent",
+  "version": "0.1",
+  "endpoint": "http://127.0.0.1:8103/rpc",
+  "methods": [
+    "plan_from_weather",
+    "plan_from_structured"
+  ]
+}

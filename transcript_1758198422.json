@@ -1,0 +1,27 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "a4b322df-6acb-4456-915f-0c7057fe3625",
+    "method": "plan_from_weather",
+    "params": {
+      "city": "Delhi",
+      "start_date": "2025-10-20",
+      "n_days": 3,
+      "preferences": {
+        "budget": "medium",
+        "interests": [
+          "history",
+          "food",
+          "markets"
+        ]
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": "a4b322df-6acb-4456-915f-0c7057fe3625",
+    "result": {
+      "itinerary": "### **3-Day Delhi Itinerary (Oct 20-22, 2025)**  \n**Weather:** Mild, dry (7% chance of rain daily).  \n\n---\n\n#### **Day 1: Historical Delhi (Oct 20)**  \n- **Morning:**  \n  - Visit **Qutub Minar** (UNESCO site, 12th-century tower).  \n  - Explore **Mehrauli Archaeological Park** (ancient ruins, tombs).  \n- **Lunch:** Try **Paranthe Wali Gali** (Old Delhi) for traditional parathas.  \n- **Afternoon:**  \n  - **Red Fort** (Mughal-era fortress, light & sound show in evening).  \n  - **Chandni Chowk** (historic market, shop for spices/textiles).  \n- **Dinner:** **Karim\u2019s** (Old Delhi) for Mughlai cuisine (kebabs, biryani).  \n\n---\n\n#### **Day 2: Cultural & Food Exploration (Oct 21)**  \n- **Morning:**  \n  - **Humayun\u2019s Tomb** (Mughal architecture, gardens).  \n  - **Nizamuddin Dargah** (Sufi shrine, optional qawwali music).  \n- **Lunch:** **Gulati Restaurant** (Pandara Road) for butter chicken.  \n- **Afternoon:**  \n  - **Dilli Haat** (artisan market, handicrafts, street food stalls).  \n  - **Lodhi Gardens** (historic tombs, peaceful walk).  \n- **Dinner:** **Khan Chacha** (Khan Market) for rolls and kebabs.  \n\n---\n\n#### **Day 3: Modern & Market Delhi (Oct 22)**  \n- **Morning:**  \n  - **India Gate** (war memorial, stroll around Rajpath).  \n  - **National Museum** (art"
+    }
+  }
+}

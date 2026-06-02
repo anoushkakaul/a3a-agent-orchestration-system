@@ -1,0 +1,25 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "5a547ea8-0e44-4d25-9d31-a6144104a22c",
+    "method": "plan_from_weather",
+    "params": {
+      "city": "Bengaluru",
+      "start_date": "2025-10-20",
+      "n_days": 2,
+      "preferences": {
+        "interests": [
+          "food",
+          "sightseeing"
+        ]
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": "5a547ea8-0e44-4d25-9d31-a6144104a22c",
+    "result": {
+      "itinerary": "**Bengaluru 2-Day Itinerary (2025-10-20 to 2025-10-21)**  \n**Weather Note:** 59% chance of rain both days \u2013 carry an umbrella and plan indoor activities.  \n\n**Day 1: Food & Cultural Exploration**  \n- **Morning:**  \n  - **Breakfast:** Start with dosa and filter coffee at **Vidhyarthi Bhavan** (Basavanagudi).  \n  - **Sightseeing:** Visit **Bull Temple** (Basavanagudi) and **Dodda Ganapathi Temple** (indoor option).  \n- **Afternoon:**  \n  - **Lunch:** Enjoy Kannada cuisine at **Mavalli Tiffin Room (MTR)** (Lal Bagh).  \n  - **Activity:** Explore **Lal Bagh Botanical Garden** (rain-friendly walkways and glasshouse).  \n- **Evening:**  \n  - **Snack:** Try street food like masala puri at **VV Puram Food Street** (covered seating available).  \n  - **Sightseeing:** Visit **Karanji Lake** (rain-friendly boardwalk) or **National Gallery of Modern Art** (indoor).  \n- **Dinner:** Indulge in Mangalorean seafood at **Kailash Parbat**.  \n\n**Day 2: Heritage & Culinary Delights**  \n- **Morning:**  \n  - **Breakfast:** Savour idlis at **Brahmins\u2019 Coffee Bar** (M.G. Road).  \n  - **Sightseeing:** Visit **Bangalore Palace** (indoor exploration) and **Cubbon Park** (rain-friendly paths).  \n- **Afternoon:**  \n  - **Lunch:** Try Hyderabadi biryani at **Shanti Sagar** (M.G. Road).  \n  - **Activity:** Explore **Visvesvaraya Industrial and Technological Museum** (indoor)."
+    }
+  }
+}

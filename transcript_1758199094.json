@@ -1,0 +1,25 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "bca2755d-e2d7-418b-a36d-6259fe5abe33",
+    "method": "plan_from_weather",
+    "params": {
+      "city": "Mumbai",
+      "start_date": "2025-10-20",
+      "n_days": 2,
+      "preferences": {
+        "interests": [
+          "food",
+          "sightseeing"
+        ]
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": "bca2755d-e2d7-418b-a36d-6259fe5abe33",
+    "result": {
+      "itinerary": "**Mumbai 2-Day Itinerary (Oct 20-21, 2025)**  \n\n**Day 1: South Mumbai Exploration (Oct 20)**  \n- **Morning**:  \n  - **8:30 AM**: Breakfast at *Kala Ghoda Cafe* (try their Parsi-style dishes).  \n  - **9:30 AM**: Visit *Gateway of India* and *Taj Mahal Palace Hotel* for iconic photos.  \n  - **10:30 AM**: Explore *Chhatrapati Shivaji Maharaj Vastu Sangrahalaya* (museum) for history and art.  \n- **Afternoon**:  \n  - **1:00 PM**: Lunch at *Bademiya* (street food legend) for kebabs and tikkas.  \n  - **2:30 PM**: Walk through *Colaba Causeway* for shopping and street vibes.  \n  - **4:00 PM**: Visit *Crawford Market* for spices and local snacks.  \n- **Evening**:  \n  - **6:00 PM**: Stroll along *Marine Drive* (Queen\u2019s Necklace) for sunset views.  \n  - **8:00 PM**: Dinner at *Oh! Calcutta!* for Bengali cuisine.  \n\n**Day 2: Local Culture & Food (Oct 21)**  \n- **Morning**:  \n  - **8:00 AM**: Breakfast at *Khyber Restaurant* (try their Nihari).  \n  - **9:30 AM**: Visit *Siddhivinayak Temple* (dress modestly).  \n  - **11:00 AM**: Explore *Dharavi Slum Tour* (ethical, insightful experience).  \n- **Afternoon**:  \n  - **1:30 PM**: Lunch at *Candies* (Bandra) for sandwiches and desserts.  \n  - **3:00 PM**: Visit *Mount Mary"
+    }
+  }
+}

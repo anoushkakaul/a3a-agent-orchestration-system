@@ -1,0 +1,25 @@
+{
+  "request": {
+    "jsonrpc": "2.0",
+    "id": "16f9e13e-ebc8-4fa0-9e6f-5d6b47e82854",
+    "method": "plan_from_weather",
+    "params": {
+      "city": "Kolkata",
+      "start_date": "2025-10-20",
+      "n_days": 2,
+      "preferences": {
+        "interests": [
+          "food",
+          "sightseeing"
+        ]
+      }
+    }
+  },
+  "response": {
+    "jsonrpc": "2.0",
+    "id": "16f9e13e-ebc8-4fa0-9e6f-5d6b47e82854",
+    "result": {
+      "itinerary": "**Kolkata 2-Day Itinerary (2025-10-20 to 2025-10-21)**  \n\n**Day 1: Exploring Heritage & Street Food (2025-10-20)**  \n- **Morning**:  \n  - Visit **Victoria Memorial** (9:00 AM \u2013 11:00 AM) \u2013 Iconic museum with colonial-era architecture.  \n  - Stroll through **Maidan Park** (11:30 AM \u2013 12:30 PM) \u2013 Enjoy the greenery and city views.  \n- **Lunch**:  \n  - Try **Kati Rolls** at Nizam\u2019s (Park Street) \u2013 Kolkata\u2019s famous street food.  \n- **Afternoon**:  \n  - Explore **Indian Museum** (1:30 PM \u2013 3:30 PM) \u2013 India\u2019s oldest museum with art and artifacts.  \n  - Visit **St. Paul\u2019s Cathedral** (4:00 PM \u2013 5:00 PM) \u2013 Beautiful Gothic architecture.  \n- **Evening**:  \n  - Walk along **Princep Ghat** (5:30 PM \u2013 6:30 PM) \u2013 Riverside promenade with Hooghly River views.  \n  - Dinner at **Oh! Calcutta!** (7:30 PM) \u2013 Authentic Bengali cuisine.  \n\n**Day 2: Cultural Immersion & Culinary Delights (2025-10-21)**  \n- **Morning**:  \n  - Visit **Dakshineswar Kali Temple** (8:00 AM \u2013 9:30 AM) \u2013 Spiritual experience with stunning architecture.  \n  - Take a ferry to **Belur Math** (10:00 AM \u2013 11:30 AM) \u2013 Peaceful temple complex.  \n- **Lunch**:  \n  - Enjoy **Mach"
+    }
+  }
+}
